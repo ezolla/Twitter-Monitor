@@ -1,0 +1,43 @@
+{
+  "Discord": {
+    "webhook": "..."
+  },
+  "Twitter": {
+    "Keys": {
+      "consumer_key": "...",
+      "consumer_secret": "...",
+      "access_token": "...",
+      "access_token_secret": "..."
+    },
+    "Accounts": [
+      "@learningszn",
+      "@Cybersole",
+      "@destroyerbots",
+      "@EveAIO",
+      "@EveSNKRS",
+      "@EveCAPTCHA",
+      "@theKickStation",
+      "@soleaio",
+      "@Backdoor",
+      "@Dashe",
+      "@BrisqueIO",
+      "@GhostAIO",
+      "@AdeptBots",
+      "@AdeptAIO",
+      "@balkobot",
+      "@AMNotify",
+      "@AMNotifyCN",
+      "@AMNOTIFYJP",
+      "@AMNotifyEU",
+      "@AMNotifyCA",
+      "@AMNotifySupreme",
+      "@StrikeShoesHQ",
+      "@notify",
+      "@NotifyLite",
+      "@PeachyPings",
+      "@ExpressNotify",
+      "@NexusRetro_",
+      "@offline"
+    ]
+  }
+}

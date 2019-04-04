@@ -1,0 +1,27 @@
+{
+  "name": "twitter-monitor",
+  "version": "1.0.0",
+  "description": "Monitor Twitter Accounts w/ Discord Integration.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezolla/Twitter-Monitor.git"
+  },
+  "keywords": [],
+  "author": "Ethan Zoller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ezolla/Twitter-Monitor/issues"
+  },
+  "homepage": "https://github.com/ezolla/Twitter-Monitor#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "discord.js": "^11.4.2",
+    "moment": "^2.24.0",
+    "request-promise": "^4.2.4",
+    "twit": "^2.2.11"
+  }
+}
