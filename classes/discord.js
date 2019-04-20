@@ -13,6 +13,30 @@ module.exports = {
    * @returns {Promise} resolves upon completion
    */
   sendHook: tweet => {
+    const fields = [];
+
+    // Checking if tweet contains a link
+    if (tweet.entities.urls[0]) {
+      log.gray("Link Identified");
+      fields.push({
+        name: "Link",
+        value: tweet.entities.urls[0].expanded_url,
+        inline: true
+      });
+    }
+
+    // Checking if tweet mentions anyone
+    if (tweet.entities.user_mentions[0]) {
+      log.gray("User Mention Identified");
+      fields.push({
+        name: "User Mentions",
+        value: tweet.entities.user_mentions
+          .map(user => `@${user.screen_name} - ${user.name}`)
+          .join(", "),
+        inline: true
+      });
+    }
+
     return new Promise((resolve, reject) => {
       request({
         url: config.Discord.webhook,
@@ -37,6 +61,7 @@ module.exports = {
                   ? tweet.entities.media[0].media_url
                   : ""
               },
+              fields: fields,
               footer: {
                 text: `Twitter Monitor | ${tweet.user.name} | @exhwn`,
                 icon_url:
