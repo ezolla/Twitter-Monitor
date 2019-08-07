@@ -44,7 +44,7 @@ If you would like to run this 24/7 off your personal machine I would reccomend u
 
 ## Authors
 
-* **Ethan Zoller** - [Twitter](https://twitter.com/learningszn)
+* **Ethan Zoller** - [Twitter](https://twitter.com/Ethanzolla)
 
 ## License
 
